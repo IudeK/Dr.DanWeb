@@ -42,7 +42,5 @@ function calcularIdade(){
 
     var resultado = (parseInt(option1) + parseInt(option2) + parseInt(option3) + parseInt(option4) + parseInt(option5)) + 204
 
-    console.log(resultado)
-
     exibirAlerta("Idade gestacional:", Math.floor(resultado / 7) + ' semanas e ' + resultado%7 + ' dia(s)!', "success" )
 }

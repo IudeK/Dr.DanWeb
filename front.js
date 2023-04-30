@@ -1,3 +1,13 @@
+function exibirAlerta(titulo ,mensagem, cor) {
+    Swal.fire({
+        icon: cor,
+        title: titulo,
+        text: mensagem,
+        confirmButtonClass: 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'
+      });   
+  }
+  
+
 
 function calcularIdade(){
 
@@ -8,27 +18,27 @@ function calcularIdade(){
     var option5 = $('#op5').val()
 
     if (option1 == null){
-        alert("O campo 'Formação do mamilo' não pode ficar vazio!")
+        exibirAlerta("Campo vazio!" ,"O campo 'Formação do mamilo' não pode ficar vazio!", "error")
         return
     }
 
     if (option2 == null){
-        alert("O campo 'Textura da pele' não pode ficar vazio!")
+        exibirAlerta("Campo vazio!" ,"O campo 'Textura da pele' não pode ficar vazio!", "error")
         return
     }
 
     if (option3 == null){
-        alert("O campo 'Formação da orelha' não pode ficar vazio!")
+        exibirAlerta("Campo vazio!" ,"O campo 'Formação da orelha' não pode ficar vazio!", "error")
         return
     }
 
     if (option4 == null){
-        alert("O campo 'Glândulas mamárias' não pode ficar vazio!")
+        exibirAlerta("Campo vazio!" ,"O campo 'Glândulas mamárias' não pode ficar vazio!", "error")
         return
     }
 
     if (option5 == null){
-        alert("O campo 'Pregas plantares' não pode ficar vazio!")
+        exibirAlerta("Campo vazio!" ,"O campo 'Pregas plantares' não pode ficar vazio!", "error")
         return
     }
 
@@ -36,5 +46,5 @@ function calcularIdade(){
 
     console.log(resultado)
 
-    alert('Idade Gestacional de: ' + Math.floor(resultado / 7) + ' semanas e ' + resultado%7 + ' dia(s)!' )
+    exibirAlerta("Idade gestacional", Math.floor(resultado / 7) + ' semanas e ' + resultado%7 + ' dia(s)!', "success" )
 }

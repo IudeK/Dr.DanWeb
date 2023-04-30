@@ -5,9 +5,7 @@ function exibirAlerta(titulo ,mensagem, cor) {
         text: mensagem,
         confirmButtonClass: 'mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent'
       });   
-  }
-  
-
+  } 
 
 function calcularIdade(){
 
